@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BeautyLine - Checkout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fce4ec;
+      padding: 40px;
+    }
+
+    .checkout-box {
+      background-color: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      color: #d63384;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .product-summary {
+      margin-bottom: 20px;
+    }
+
+    .product-summary p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c0266b;
+    }
+
+    .message {
+      text-align: center;
+      color: green;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="checkout-box">
+    <h2>Checkout</h2>
+    <div class="product-summary">
+      <p><strong>Product:</strong> Lipstick</p>
+      <p><strong>Price:</strong> $19.99</p>
+    </div>
+
+    <button id="purchaseBtn">Purchase</button>
+
+    <div class="message" id="message"></div>
+  </div>
+
+  <script>
+    document.getElementById("purchaseBtn").addEventListener("click", function () {
+     
+      document.getElementById("message").textContent = "Thank you! Your purchase was successful.";
+    });
+  </script>
+
+</body>
+</html>
